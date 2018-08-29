@@ -38,7 +38,7 @@ function showSquare() {
 	context.moveTo(10, verPos); //horizontal, vertical
 	console.log("Vertical Position: " + verPos);
 
-	context.lineTo(200, verPos);
+	context.lineTo(400, verPos);
 	context.lineCap = "butt";
 	context.stroke();
 	
@@ -55,4 +55,7 @@ document.getElementById('start').onclick=function() {
 	}
 }
 
-// var can document.getElementById("whiteBoard").onclick=function() {
+document.getElementById("stop").onclick=function() {
+	clearInterval(animation);
+	notRunning = true;
+}
