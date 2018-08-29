@@ -1,13 +1,4 @@
 
-// function lightShow() {
-
-// 	var showtime = getElementById('whiteBoard').
-
-// 	displayIt = showtime.innerHTML
-// }
-
-
-
 var notRunning = true; //prevents double-run bug
 
 function getRandColor() {
