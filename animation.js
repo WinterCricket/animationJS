@@ -14,7 +14,7 @@ function getRandColor() {
 	var letters = '0123456789ABCDEF'.split('');
 	var color = "#";
 	for(var i = 0; i < 6; i++) {
-		color += letters[Math.floor(Math.random() * 16)];
+		color += letters[Math.floor(Math.random() * 16)];//keep eye on this
 	}
 	return color;
 }
@@ -26,6 +26,7 @@ function showSquare() {
 
 	var canvas = document.getElementById("whiteBoard");
 	var context = canvas.getContext("2d");
+
 	var verPos = Math.floor((Math.random() * 199) + 1);
 	var theColor = getRandColor();
 
@@ -43,10 +44,15 @@ function showSquare() {
 	
 	document.getElementById('showColor').innerHTML = theColor;
 }
+var animation
 
-
-document.getElementById('buttons').onclick=function() {
-	lightShow();
+document.getElementById('start').onclick=function() {
+	if(notRunning) {
+	animation = setInterval(showSquare, 100);
+	notRunning = false;
+	} else {
+		alert("Draw Screen is already running.")
+	}
 }
 
-var candocument.getElementById("whiteBoard").onclick=function() {
+// var can document.getElementById("whiteBoard").onclick=function() {
