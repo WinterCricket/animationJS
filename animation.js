@@ -26,8 +26,22 @@ function showSquare() {
 
 	var canvas = document.getElementById("whiteBoard");
 	var context = canvas.getContext("2d");
-	 var verPos = Math.floor((Math.random() * 199) + 1);
+	var verPos = Math.floor((Math.random() * 199) + 1);
+	var theColor = getRandColor();
+
+	context.lineWidth = 10;
+	context.strokeStyle = theColor;
+
+	//draw line with standard butt ending
+
+	context.moveTo(10, verPos); //horizontal, vertical
+	console.log("Vertical Position: " + verPos);
+
+	context.lineTo(200, verPos);
+	context.lineCap = "butt";
+	context.stroke();
 	
+	document.getElementById('showColor').innerHTML = theColor;
 }
 
 
