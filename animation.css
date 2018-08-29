@@ -2,20 +2,23 @@
 
 
 
-
-
-
 main, div {
 	width: 50%;
 	margin: 0 auto;
 }
 
-#button {
 
+
+
+#buttons {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 #showColor {
-	
+	font-size: 24px;
+	text-align: center;
 }
 
 #whiteBoard {
@@ -28,4 +31,10 @@ main, div {
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	}
+}
+canvas {
+	padding: 10px;
+	margin: 0 auto;
+	display: block;
+	
+}
