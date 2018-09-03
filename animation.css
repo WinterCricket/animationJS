@@ -23,7 +23,7 @@ main, div {
 
 #whiteBoard {
 
-	background-color: #eeffee;
+	background-color: hsl(80 90% 90%);
 	color: blue;
 	width: 400px;
 	height: 200px;
@@ -31,10 +31,12 @@ main, div {
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
+
 }
 canvas {
 	padding: 10px;
 	margin: 0 auto;
 	display: block;
+	
 	
 }
