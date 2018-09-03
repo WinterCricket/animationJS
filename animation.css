@@ -53,6 +53,20 @@ button:hover {
 	transform: scale(1.2) skewX(-20deg);
 	background-color: yellow;
 	/*transform: skewX(20deg);*/
+	animation-name: charmy;
+	animation-duration: 1s;
+}
+
+@keyframes charmy {
+	0% {
+		background-color: yellow;
+	}
+	50% {
+		background-color: red;
+	}
+	100% {
+		background-color: blue;
+	}
 }
 .heart {
   position: absolute;
