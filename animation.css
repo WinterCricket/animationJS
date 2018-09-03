@@ -1,5 +1,7 @@
  
-
+p {
+	z-index: 2
+}
 
 
 main, div {
@@ -8,7 +10,9 @@ main, div {
 }
 
 
-
+#heart {
+	bottom: 200px;
+}
 
 #buttons {
 	margin: 0 auto;
@@ -19,6 +23,7 @@ main, div {
 #showColor {
 	font-size: 24px;
 	text-align: center;
+	z-index: 2;
 }
 
 #whiteBoard {
@@ -55,6 +60,7 @@ button:hover {
 	/*transform: skewX(20deg);*/
 	animation-name: charmy;
 	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes charmy {
@@ -104,7 +110,9 @@ button:hover {
 	transform: scale(3) rotate(-45deg);
     
     animation-name: rainbow;
-    animation-duration: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
   }
 
 
