@@ -49,3 +49,6 @@ canvas {
 body {
 	 background: url(https://i.imgur.com/MJAkxbh.png);
 }
+button:hover {
+	transform: scale(1.2);
+}
