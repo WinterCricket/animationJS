@@ -86,3 +86,6 @@ button:hover {
   top: -25px;
   left: 0px;
 }
+.heart:hover {
+	transform: scale(3) rotate(-45deg);
+}
