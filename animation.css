@@ -84,7 +84,11 @@ button:hover {
   background-color: pink;
   height: 50px;
   width: 50px;
-  transform: rotate(-45deg) ;
+  transform: rotate(-45deg);
+  animation-name: rainbow;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 .heart::after {
   background-color: pink;
@@ -107,11 +111,9 @@ button:hover {
   left: 0px;
 }
 .heart:hover {
-	transform: scale(3) rotate(-45deg);
+	
     
-    animation-name: rainbow;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    
     
   }
 
@@ -119,19 +121,19 @@ button:hover {
   @keyframes rainbow {
     0% {
       background-color: pink;
-      top: 0px;
-      left: 0px;
+      transform: scale(1) rotate(-45deg);
+      
       }
       50% {
-        background-color: red;
-        top: 20px;
-        left: 20px;
+        background-color: pink;
+        transform: scale(3) rotate(-45deg);
+        
         opacity: 0.1;
       }
       100% {
-        background-color: blue;
-        top: 0px;
-        left: -20px;
+        background-color: pink;
+        transform: scale(1) rotate(-45deg);
+        
       }
   }
 }
