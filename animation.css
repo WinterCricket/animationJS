@@ -119,12 +119,19 @@ button:hover {
   @keyframes rainbow {
     0% {
       background-color: pink;
+      top: 0px;
+      left: 0px;
       }
       50% {
         background-color: red;
+        top: 20px;
+        left: 20px;
+        opacity: 0.1;
       }
       100% {
         background-color: blue;
+        top: 0px;
+        left: -20px;
       }
   }
 }
