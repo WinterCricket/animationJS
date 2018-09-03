@@ -50,5 +50,6 @@ body {
 	 background: url(https://i.imgur.com/MJAkxbh.png);
 }
 button:hover {
-	transform: scale(1.2);
-}
+	transform: scale(1.2) skewX(-20deg);
+	/*transform: skewX(20deg);
+}*/
