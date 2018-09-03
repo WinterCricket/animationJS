@@ -88,4 +88,21 @@ button:hover {
 }
 .heart:hover {
 	transform: scale(3) rotate(-45deg);
+    
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+
+
+  @keyframes rainbow {
+    0% {
+      background-color: pink;
+      }
+      50% {
+        background-color: red;
+      }
+      100% {
+        background-color: blue;
+      }
+  }
 }
