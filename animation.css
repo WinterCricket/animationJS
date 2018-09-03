@@ -23,7 +23,13 @@ main, div {
 
 #whiteBoard {
 
-	background: linear-gradient(35deg, #CCFFFF, #FFCCCC );
+	background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      black 40px,
+      yellow 40px,
+      black 80px
+    );
 	color: blue;
 	width: 400px;
 	height: 200px;
@@ -39,4 +45,7 @@ canvas {
 	display: block;
 	
 	
+}
+body {
+	 background: url(https://i.imgur.com/MJAkxbh.png);
 }

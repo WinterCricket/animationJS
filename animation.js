@@ -39,7 +39,7 @@ var animation
 
 document.getElementById('start').onclick=function() {
 	if(notRunning) {
-	animation = setInterval(showSquare, 100);
+	animation = setInterval(showSquare, 1000);
 	notRunning = false;
 	} else {
 		alert("Draw Screen is already running.")
